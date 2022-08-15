@@ -1,10 +1,10 @@
 require("dotenv").config();
-const express = require("express")();
-const app = express;
+const express = require("express");
+const app = express();
 
 // placeholder data
 app.get("/api", (req, res) => {
-  res.json({ numbers: { one, two, three } });
+  res.json({ users: ["userOne", "userTwo", "userThree"] });
 });
 
 const PORT = process.env.PORT || 3001;
